@@ -10,5 +10,9 @@ import App from '../App';
 import renderer from 'react-test-renderer';
 
 it('renders correctly', () => {
-  renderer.create(<App />);
+  const tree = renderer.create(
+    <App />
+  ).toJSON();
+  expect(tree).toMatchSnapshot();
+  // renderer.create(<App />);
 });
