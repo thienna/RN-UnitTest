@@ -1,56 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders correctly 1`] = `
-<View
-  accessibilityIgnoresInvertColors={true}
-  style={
-    Object {
-      "backgroundColor": "#F3F3F3",
-      "paddingBottom": 40,
-      "paddingHorizontal": 32,
-      "paddingTop": 96,
-    }
-  }
->
-  <Image
-    accessibilityRole="image"
-    source={
-      Object {
-        "testUri": "../Libraries/NewAppScreen/components/logo.png",
-      }
-    }
-    style={
-      Array [
-        Object {
-          "bottom": 0,
-          "left": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 0,
-        },
-        Object {
-          "height": undefined,
-          "width": undefined,
-        },
-        Object {
-          "backgroundColor": "red",
-          "opacity": 0.2,
-          "resizeMode": "contain",
-        },
-      ]
-    }
-  />
-  <Text
-    style={
-      Object {
-        "color": "#000",
-        "fontSize": 40,
-        "fontWeight": "600",
-        "textAlign": "center",
-      }
-    }
-  >
-    Sun
-  </Text>
-</View>
-`;
+exports[`Testing ImageItem component renders image correctly 1`] = `ShallowWrapper {}`;
+
+exports[`Testing ImageItem component renders image correctly 2`] = `ShallowWrapper {}`;
+
+exports[`Testing ImageItem component renders image3 correctly 1`] = `ShallowWrapper {}`;
+
+exports[`Testing ImageItem component renders image3 correctly 2`] = `ShallowWrapper {}`;

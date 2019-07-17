@@ -5,12 +5,18 @@
 import 'react-native';
 import React from 'react';
 import ImageItem from '../src/ImageItem';
+import { shallow, configure } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
 
-import renderer from 'react-test-renderer';
+configure({ adapter: new Adapter() });
 
-it('renders correctly', () => {
-  const tree = renderer.create(
-    <ImageItem text={'Sun'}/>
-  ).toJSON();
-  expect(tree).toMatchSnapshot();
+describe('Testing ImageItem component', () => {
+  it('renders image correctly', () => {
+    const wrapper = shallow(
+      <ImageItem text={'Sun'}/>,
+    );
+    expect(wrapper).toMatchSnapshot();
+    wrapper.setProps({ text: 'Sun2' });
+    expect(wrapper).toMatchSnapshot();
+  });
 });
