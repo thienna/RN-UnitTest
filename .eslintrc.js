@@ -9,4 +9,7 @@ module.exports = {
       "trailingComma": "all",
     }]
   },
+  "env": {
+    "jest": true
+  }
 };

@@ -1,18 +1,21 @@
-import React, { Fragment } from 'react';
-import { SafeAreaView, StatusBar, StyleSheet } from 'react-native';
-import ImageItem from './ImageItem';
+import React from 'react';
+import { SafeAreaView, Text } from 'react-native';
+import { Provider } from 'react-redux';
 
-const App = () => {
-  return (
-    <Fragment>
-      <StatusBar barStyle="dark-content"/>
-      <SafeAreaView>
-        <ImageItem text={'Sun'}/>
-      </SafeAreaView>
-    </Fragment>
-  );
-};
+import store from './store/configureStore';
+import RepoPage from './containers/RepoPage';
 
-const styles = StyleSheet.create({});
-
-export default App;
+export default class Root extends React.Component {
+  render() {
+    return (
+      <Provider store={store}>
+        <SafeAreaView style={{flex: 1}}>
+          <Text>
+            E3mo
+          </Text>
+          <RepoPage/>
+        </SafeAreaView>
+      </Provider>
+    );
+  }
+}
