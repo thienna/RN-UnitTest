@@ -3,7 +3,3 @@
 exports[`Testing ImageItem component renders image correctly 1`] = `ShallowWrapper {}`;
 
 exports[`Testing ImageItem component renders image correctly 2`] = `ShallowWrapper {}`;
-
-exports[`Testing ImageItem component renders image3 correctly 1`] = `ShallowWrapper {}`;
-
-exports[`Testing ImageItem component renders image3 correctly 2`] = `ShallowWrapper {}`;
